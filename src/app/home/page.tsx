@@ -1,12 +1,12 @@
-import S from "./style.module.sass";
+"use client";
+import { Hero } from "@/features/hero/containers/Hero/Hero";
 
 export default function Home() {
   return (
-    <main className={S["hero"]}>
-      <div className={S["text"]}>
-        <h1 className={S["main-title"]}>Dashme</h1>
-        <h3 className={S["slogan"]}>Sua vida em suas mãos.</h3>
-      </div>
-    </main>
+    <Hero title="Dashme" slogan="Sua vida em suas mãos">
+      <Hero.Title />
+      <Hero.Slogan />
+      <Hero.LoginButton />
+    </Hero>
   );
 }
