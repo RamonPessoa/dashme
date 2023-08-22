@@ -1,5 +1,5 @@
-import { useHeroContext } from "../../contexts/HeroContext";
-import S from "./Slogan.module.sass";
+import { useHeroContext } from "./HeroContext";
+import S from "./Hero.module.sass";
 
 export function HeroSlogan() {
   const { slogan } = useHeroContext();
